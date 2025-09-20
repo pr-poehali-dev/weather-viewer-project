@@ -123,6 +123,15 @@ const WeatherPage: React.FC = () => {
   return (
     <div className={`min-h-screen ${getGradientClass()} p-4`}>
       <div className="max-w-6xl mx-auto">
+        {/* Header with Logo */}
+        <div className="text-center mb-8 animate-fade-in">
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <Icon name="Cloud" size={40} className="text-white animate-float" />
+            <h1 className="text-4xl font-light text-white">Cloud Weather</h1>
+          </div>
+          <p className="text-white/80 text-lg">Ваш персональный помощник по погоде</p>
+        </div>
+
         {/* Search Header */}
         <div className="flex flex-col md:flex-row gap-4 mb-8 animate-fade-in">
           <div className="flex-1 flex gap-2">
